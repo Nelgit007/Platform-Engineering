@@ -1,6 +1,6 @@
 # Platform-Engineering
 A hands-on guide to platform engineering
-multi-service-linux-automation/
+
 ## Project 1
 ```
 multi-service-linux-automation/
