@@ -3,7 +3,6 @@ A hands-on guide to platform engineering
 # PROJECT 1
 multi-service-linux-automation/
 ├── README.md
-├── deployment_note
 ├── scripts/
 │   ├── 01-network-setup.sh
 │   ├── 02-firewall-setup.sh
