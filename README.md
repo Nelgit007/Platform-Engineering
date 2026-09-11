@@ -37,7 +37,7 @@ for a multi-service Linux environment using shell scripts.
 
 ## Usage
 \`\`\`bash
-git clone <repo-url>
+git clone <above-repo-url>
 cd multi-service-linux-automation
 chmod +x deploy.sh scripts/*.sh
 sudo ./deploy.sh
@@ -50,7 +50,9 @@ sudo ./deploy.sh
   and will restart any service found not running.
 
 ## Validation
-curl -I http://localhost  
+curl -I http://localhost
+curl http://localhost/api/
+curl --max-time 2 http://localhost:5000/
 ```
 
 
