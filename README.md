@@ -55,4 +55,21 @@ curl http://localhost/api/
 curl --max-time 2 http://localhost:5000/
 ```
 
+## Project 2
+```
+Three Tier Architecture Deployment
+├── README.md
+├── deploy.sh
+├── scripts/
+│   ├── 01-network-setup.sh
+│   ├── 02-firewall-setup.sh
+│   ├── 03-install-services.sh
+│   ├── 04-configure-services.sh
+│   └── 05-manage-services.sh
+├── configs/
+│   └── nginx.conf.template
+└── app/
+    └── app.py
+
+```
 
