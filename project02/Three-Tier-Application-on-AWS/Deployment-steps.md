@@ -74,13 +74,15 @@ An Internet Gateway (IGW) is a crucial component in your VPC that serves as a ga
 ### 2.4 Create the NAT Gateways
 
 **VPC → NAT gateways → Create NAT gateway.** Create one in each public subnet so each AZ has its own outbound path.
+A NAT (Network Address Translation) Gateway is essential for resources in private subnets that need to access the internet while remaining secure from incoming traffic.
 
 | Name | Subnet | Elastic IP |
 |---|---|---|
-| `nat-a` | `public-a` | Allocate new |
-| `nat-b` | `public-b` | Allocate new |
+| `nat-a` | `web-tier-a` | Allocate new |
+| `nat-b` | `web-tier-b` | Allocate new |
 
-![NAT gateways](./screenshots/02-nat-gateways.png)
+![NAT gateways](./screenshots/<img width="1920" height="1080" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/c7dbf655-2172-4ea0-83bd-497aec7a384a" />
+)
 
 ### 2.5 Create the route tables
 
