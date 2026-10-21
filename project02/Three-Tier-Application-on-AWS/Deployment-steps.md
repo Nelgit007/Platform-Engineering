@@ -41,7 +41,8 @@ This document walks through deploying the three-tier architecture (web, applicat
 
 Then enable DNS hostnames: **Actions → Edit VPC settings → Enable DNS hostnames**.
 
-![VPC created](./screenshots/02-vpc-created.png)
+![VPC created](./screenshots/<img width="1920" height="1080" alt="vpc" src="https://github.com/user-attachments/assets/a80d0c25-06bc-4e0a-aa27-b9f0534fa61e" />
+)
 
 ### 2.2 Create the subnets
 
