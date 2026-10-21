@@ -65,10 +65,11 @@ For the two public subnets, enable auto-assign public IPv4: **Actions → Edit s
 )
 
 ### 2.3 Create and attach the Internet Gateway
+An Internet Gateway (IGW) is a crucial component in your VPC that serves as a gateway between your public resources and the internet. it enables resources in public subnets to access the internet, and allows incoming traffic from the internet to reach your public resources.
 
 **VPC → Internet gateways → Create internet gateway** (`three-tier-igw`), then **Actions → Attach to VPC**.
 
-![Internet gateway attached](./screenshots/02-igw-attached.png)
+![Internet gateway attached](./screenshots/<img width="1920" height="1080" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/8c711ac0-2919-4740-8160-26261b0fa7c7" />)
 
 ### 2.4 Create the NAT Gateways
 
