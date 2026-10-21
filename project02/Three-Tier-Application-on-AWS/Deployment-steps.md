@@ -52,16 +52,17 @@ Then enable DNS hostnames: **Actions → Edit VPC settings → Enable DNS hostna
 |---|---|---|---|
 | `public-a` | AZ-a | `10.0.0.0/24` | Public |
 | `public-b` | AZ-b | `10.0.1.0/24` | Public |
-| `web-a` | AZ-a | `10.0.10.0/24` | Private (web) |
-| `web-b` | AZ-b | `10.0.11.0/24` | Private (web) |
-| `app-a` | AZ-a | `10.0.20.0/24` | Private (app) |
-| `app-b` | AZ-b | `10.0.21.0/24` | Private (app) |
-| `db-a` | AZ-a | `10.0.30.0/24` | Isolated (database) |
-| `db-b` | AZ-b | `10.0.31.0/24` | Isolated (database) |
+| `web-a` | EU-a | `10.0.3.0/24` | Public (web-tier) |
+| `web-b` | EU-b | `10.0.4.0/24` | Public (web-tier) |
+| `app-a` | EU-a | `10.0.6.0/24` | Private (app-tier) |
+| `app-b` | EU-b | `10.0.7.0/24` | Private (app-tier) |
+| `db-a` | EU-a | `10.0.30.0/24` | Isolated (database) |
+| `db-b` | EU-b | `10.0.31.0/24` | Isolated (database) |
 
 For the two public subnets, enable auto-assign public IPv4: **Actions → Edit subnet settings**.
 
-![Subnets created](./screenshots/02-subnets-created.png)
+![Subnets created](./screenshots/<img width="1920" height="1080" alt="Screenshot (286)" src="https://github.com/user-attachments/assets/9bdd250c-2243-4d77-a26b-e62e3c66b4b1" />
+)
 
 ### 2.3 Create and attach the Internet Gateway
 
