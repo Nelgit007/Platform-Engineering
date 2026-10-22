@@ -85,6 +85,7 @@ A NAT (Network Address Translation) Gateway is essential for resources in privat
 )
 
 ### 2.5 Create the route tables
+Route tables are essential networking components that control how traffic flows between subnets and to/from the internet. Each subnet must be associated with a route table, which contains rules (routes) that determine where traffic can be directed
 
 **VPC → Route tables → Create route table.**
 
@@ -95,7 +96,8 @@ A NAT (Network Address Translation) Gateway is essential for resources in privat
 | `private-rt-b` | `0.0.0.0/0` → `nat-b` | `web-b`, `app-b` |
 | `db-rt` | Local route only, **no** `0.0.0.0/0` | `db-a`, `db-b` |
 
-![Route tables](./screenshots/02-route-tables.png)
+![Route tables](./screenshots/<img width="1920" height="1080" alt="Screenshot (291)" src="https://github.com/user-attachments/assets/267f42b6-b15b-4546-9bb0-ed7d489aa070" />
+)
 
 ### Verify
 - The VPC resource map (**VPC → Your VPCs → select VPC → Resource map**) shows all eight subnets and the correct route table for each.
@@ -103,6 +105,7 @@ A NAT (Network Address Translation) Gateway is essential for resources in privat
 
 ![VPC resource map](./screenshots/02-vpc-resource-map.png)
 
+NB: Ensure your IGW is associated to the vpc before you can assign it a route inside your vpc
 ---
 
 ## 3. Create the Security Groups
