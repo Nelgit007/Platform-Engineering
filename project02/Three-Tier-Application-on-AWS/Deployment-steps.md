@@ -81,7 +81,8 @@ A NAT (Network Address Translation) Gateway is essential for resources in privat
 | `nat-a` | `web-tier-a` | Allocate new |
 | `nat-b` | `web-tier-b` | Allocate new |
 
-![NAT gateways](./screenshots/<img width="1920" height="1080" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/c7dbf655-2172-4ea0-83bd-497aec7a384a" />
+![NAT gateways](./screenshots/<img width="1920" height="1080" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/dc4df35d-3c53-4c84-a009-2642ca93b624" />
+>
 )
 
 ### 2.5 Create the route tables
