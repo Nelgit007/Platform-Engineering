@@ -116,19 +116,18 @@ NB: Ensure your IGW is associated to the vpc before you can assign it a route in
 | Security group | Inbound rule | Source |
 |---|---|---|
 | `alb-sg` | HTTP 80, HTTPS 443 | `0.0.0.0/0` |
-| `web-sg` | HTTP 80 | `alb-sg` |
-| `app-sg` | Custom TCP 3000 | `web-sg` |
-| `db-sg` | PostgreSQL 5432 | `app-sg` |
+| `web-tier-sg` | HTTP 80 | `alb-sg` |
+| `internal-lb-sg` | HTTP 80 | `web-tier-sg` |
+| `private-sg` | Custom TCP 3000 | `internal-lb-sg` |
+| `db-sg` | Aurora 3048 | `private-sg` |
 
 Notes:
 - Use the **security group ID as the source**, not a CIDR range. This is what enforces tier-to-tier access.
 - No SSH (port 22) rule is added anywhere. Administrative access uses AWS Systems Manager Session Manager (configured in step 7).
 - Keep the default outbound rules unless your policy requires tightening them.
 
-![alb-sg rules](./screenshots/03-alb-sg.png)
-![web-sg rules](./screenshots/03-web-sg.png)
-![app-sg rules](./screenshots/03-app-sg.png)
-![db-sg rules](./screenshots/03-db-sg.png)
+![alb,web,app,db-sg rules](./screenshots/<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d11066e8-af7a-4da7-a3ca-b2c7306ec9ec" />
+)
 
 ### Verify
 Each group's inbound rules list exactly one source, and only `alb-sg` allows `0.0.0.0/0`.
