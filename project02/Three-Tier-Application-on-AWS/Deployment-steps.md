@@ -299,10 +299,6 @@ Do not register targets manually. The Auto Scaling Group registers them.
 FOr Production case:
 Choosing "Manage master credentials in AWS Secrets Manager" means no password is typed, stored in code, or shared. RDS creates and rotates the secret for you.
 
-![RDS configuration](./screenshots/)
-
-Optionally, enforce TLS: create a parameter group with `rds.force_ssl = 1` and attach it to the instance.
-
 ### Verify
 - Status is **Available** and Multi-AZ shows **Yes**.
 - Public accessibility shows **No**.
