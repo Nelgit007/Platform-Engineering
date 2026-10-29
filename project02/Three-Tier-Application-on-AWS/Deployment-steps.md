@@ -296,18 +296,19 @@ Do not register targets manually. The Auto Scaling Group registers them.
 | Security group | `db-sg` |
 | Backup retention | 7 days |
 
+FOr Production case:
 Choosing "Manage master credentials in AWS Secrets Manager" means no password is typed, stored in code, or shared. RDS creates and rotates the secret for you.
 
-![RDS configuration](./screenshots/06-rds-config.png)
+![RDS configuration](./screenshots/)
 
 Optionally, enforce TLS: create a parameter group with `rds.force_ssl = 1` and attach it to the instance.
 
 ### Verify
 - Status is **Available** and Multi-AZ shows **Yes**.
 - Public accessibility shows **No**.
-- A secret for the instance exists in **Secrets Manager**. Note its ARN for the next step.
 
-![RDS available](./screenshots/06-rds-available.png)
+![RDS available](./screenshots/<img width="1920" height="1080" alt="Screenshot (294)" src="https://github.com/user-attachments/assets/6231e5dd-e285-4be4-9ffd-74ef8c6dfd20" />
+)
 
 ---
 
